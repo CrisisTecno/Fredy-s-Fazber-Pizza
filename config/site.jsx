@@ -1,4 +1,4 @@
 export const siteConfig = {
-	name: "Next.js + NextUI",
+	name: "Freddy-s Fazbear",
 	description: "Make beautiful websites regardless of your design experience.",
 }

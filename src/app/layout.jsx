@@ -4,7 +4,6 @@ import '@/styles/globals.css';
 import {siteConfig} from '@/config/site'
 // app/layout.tsx
 
-import NavBer from '@/src/components/NavBar/NavBar';
 import {Providers} from "./providers";
 import { Header } from '../components/Header';
 export const metadata = {
@@ -26,7 +25,6 @@ export default function RootLayout({children}) {
       <Header></Header>
       <body>
         <Providers>
-          <NavBer></NavBer>
           {children}
         </Providers>
       </body>

@@ -7,16 +7,16 @@ export const comentariosData=[
       "comentario": "Probé la pizza de pepperoni y quedé impresionado. Ingredientes frescos y masa perfecta. Definitivamente regresaré.",
       "hastack": "#PizzaDePepperoni #IncreibleSabor",
       "impresiones": 80,
-      "corazones": 15
+      "corazones": 4
     },
     {
-      "name": "CHICA",
+      "name": "CHICA ❤️",
       "url":"https://scontent.flpb2-1.fna.fbcdn.net/v/t1.18169-9/13754231_139255739838669_2418602318476070777_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9a8829&_nc_ohc=bQdVW2de618AX_GmM5F&_nc_ht=scontent.flpb2-1.fna&oh=00_AfD5dR7Wfv0AKJNy1ZXx4jLhXR4uHacjYJCJ-4QYCSMCIQ&oe=657A93DC",
       "alias": "@Explorador",
       "comentario": "¡Una experiencia culinaria excepcional! La variedad de sabores es asombrosa. Recomiendo la pizza vegetariana.",
-      "hastack": "#PizzaVegetariana #ExperienciaGastronomica",
+      "hastack":" #ExperienciaGastronomica",
       "impresiones": 150,
-      "corazones": 30
+      "corazones": 5
     },
     {
       "name": "BONNY",
@@ -25,7 +25,25 @@ export const comentariosData=[
       "comentario": "La pizzería tiene un ambiente acogedor y las pizzas son auténticas. Un lugar perfecto para una noche de pizza y buena compañía.",
       "hastack": "#AmbienteAcogedor #PizzaAutentica",
       "impresiones": 100,
-      "corazones": 20
+      "corazones": 4
+    },
+    {
+      "name": "CHICA ❤️",
+      "url":"https://scontent.flpb2-1.fna.fbcdn.net/v/t1.18169-9/13754231_139255739838669_2418602318476070777_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9a8829&_nc_ohc=bQdVW2de618AX_GmM5F&_nc_ht=scontent.flpb2-1.fna&oh=00_AfD5dR7Wfv0AKJNy1ZXx4jLhXR4uHacjYJCJ-4QYCSMCIQ&oe=657A93DC",
+      "alias": "@Explorador",
+      "comentario": "¡Una experiencia culinaria excepcional! La variedad de sabores es asombrosa. Recomiendo la pizza vegetariana.",
+      "hastack":" #ExperienciaGastronomica",
+      "impresiones": 150,
+      "corazones": 5
+    },
+    {
+      "name": "BONNY",
+      "url":"https://scontent.flpb2-1.fna.fbcdn.net/v/t39.30808-6/395573292_1056856269082077_9221087612908484506_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MvTicjyEGe8AX8r-Qpk&_nc_ht=scontent.flpb2-1.fna&oh=00_AfAPDPKkVxv4NDPZl0dhV9AgbM-tmbL9hdYq2LjznhEumw&oe=6558CD9F",
+      "alias": "@ComensalSatisfecho",
+      "comentario": "La pizzería tiene un ambiente acogedor y las pizzas son auténticas. Un lugar perfecto para una noche de pizza y buena compañía.",
+      "hastack": "#AmbienteAcogedor #PizzaAutentica",
+      "impresiones": 100,
+      "corazones": 4
     }
   ]
   

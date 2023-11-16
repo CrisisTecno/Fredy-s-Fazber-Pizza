@@ -6,28 +6,37 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, Drop
 
 const NavBer= ({}) => {
 	return (
-		<Navbar className="py-5 justify-evenly bg-transparent">
+		<Navbar className="flex py-5 justify-center bg-transparent rounded-b-full">
 		  <NavbarContent className="flex">
-		  	<img src="https://scontent.flpb2-1.fna.fbcdn.net/v/t39.30808-6/401813245_187419737751830_8465570901511260162_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BBNDfaJhIQ0AX_-9Bkh&_nc_ht=scontent.flpb2-1.fna&oh=00_AfCjOiT-d_Tvv4P9plfyvI6Dr2pcZjNaf9OCa9Ds0jQ3xg&oe=6558E869" 
+			<Link href="/">
+			<img src="https://scontent.flpb2-1.fna.fbcdn.net/v/t39.30808-6/401813245_187419737751830_8465570901511260162_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BBNDfaJhIQ0AX_-9Bkh&_nc_ht=scontent.flpb2-1.fna&oh=00_AfCjOiT-d_Tvv4P9plfyvI6Dr2pcZjNaf9OCa9Ds0jQ3xg&oe=6558E869" 
 			alt="lindo_icono" className="w-16 h-16 rounded-full  border-orange-500 border solid 2rem color #FFB457" />
+			<p className="font-kdam px-3 font-bold text-lg text-inherit text-orange-500">FREDY'S FAZBER</p>
+			</Link>
+		  	
 		
-			<p className="font-kdam px-3 font-bold text-lg text-inherit">FREDY'S FAZBER</p>
+			
 		  </NavbarContent>
 	
-		  <NavbarContent className="hidden sm:flex gap-4" justify="center">
+		  <NavbarContent className="hidden sm:flex  ml-20" justify="center">
 			<NavbarItem>
-			  <Link color="foreground" href="#">
+			  <Link color="foreground" href="/pages/usuarios" className="hover:text-orange-400">
 				Usuarios
 			  </Link>
 			</NavbarItem>
-			<NavbarItem isActive>
-			  <Link href="#" aria-current="page" color="warning">
-				Recetas
+			<NavbarItem >
+			  <Link href="#" aria-current="page" color="foreground" className="hover:text-orange-400">
+				Pizzas
 			  </Link>
 			</NavbarItem>
 			<NavbarItem>
-			  <Link color="foreground" href="#">
+			  <Link color="foreground" href="/pages/menus"  className="hover:text-orange-400">
 				Menus
+			  </Link>
+			</NavbarItem>
+			<NavbarItem>
+			  <Link color="foreground" href="#" className="hover:text-orange-400">
+				Ingredientes
 			  </Link>
 			</NavbarItem>
 		  </NavbarContent>

@@ -1,72 +1,42 @@
-// app/page.tsx
+"use client"
+// import video from '@/public/video/landing.mp4';
+// // import profilePic from '@/public/uno.png';
+ import { Player } from 'video-react';
+// import Image from 'next/image';
+// import Video from 'next/video';
+import {Button} from "@nextui-org/react";
+import Link from 'next/link';
 
-import {Button} from '@nextui-org/button'; 
-import {comentariosData} from '@/src/api/data/comentarios.data';
-import CardComentary from '../components/Card/Card';
 export default function Page() {
   return (
-    <>
-      <div className="flex justify-center items-center">
-        <div className="border-8 border-orange-700  bg-orange-700 rounded-3xl  w-[20vw] h-[45vh]">
-              <div className="border-8 border-orange-300 rounded-3xl  bg-yellow-900 w-[20vw] h-[45vh] block p-4 text-center">
-                <h3 className="text-black font-agbalumo text-xl bg-amber-400
-                 rounded-xl p-1 shadow-lg shadow-gray-900"
-                 >¡FAZT PIZZA!</h3>
-                 <div className="border-dotted border-5 border-black flex felx-col items-center justify-center
-                 mt-3 rounded-xl p-4  font-mono text-black bg-amber-500 w-[20w] h-[30vh]">
-                    <ul className='text-sm'>
-                      <li>Carnivorita</li>
-                      <li>Carnivorota</li>
-                      <li>Queso</li>
-                      <li>Ufasaruio</li>
-                      <li>Mongosauro</li>
-                      <li>Algo</li>
-                    </ul>
-                 </div>
-        </div>
-  </div>
-        <img src="https://freddyfazbearspizzaplace.simdif.com/images/public/sd_641ae29e893ab.png?no_cache=1679487155" 
-        alt="" className='w-[40vw] h-[45vh] px-[2vw] ' />
+
+<section className='relative w-[98vw] h-[100vh]' >
+            {/* <Player autoPlay width={100} height={100} fluid repeat>
+            <source src="https://res.cloudinary.com/diubghp1i/video/upload/v1700112917/landing_x7yak3.mp4" />
+        </Player> */}
+        <Button color="warning" variant="flat"  className='absolute shadow-2xl rounded-full text-3xl capitalize py-[4vh] bottom-40 left-[25%] right-[25%] 'onPress={() => {}}>
+            <Link href='/pages'> Vamos con Fredy's</Link>
             
-<div className="border-8 border-orange-700 rounded-3xl bg-orange-700    w-[20vw] h-[45vh] ">
-<div className="border-8 border-orange-300  bg-yellow-900 rounded-3xl  w-[20vw] h-[45vh] flex flex-col 
-  text-center justify-center p-6">
-      <h3 className="text-black font-agbalumo text-xl bg-amber-400
-                 rounded-xl p-1 shadow-lg shadow-gray-900 mb-2 ">¡FAZT SHOW!</h3>
-      <img src="https://scontent.flpb2-1.fna.fbcdn.net/v/t39.30808-6/401841978_187433854417085_3183005119541427833_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b-07yDz9wLMAX-AoyuE&_nc_ht=scontent.flpb2-1.fna&oh=00_AfBnEC0NuTT79XcyCoRDOnpawb_hK3QNU1JTGce70Skf-Q&oe=6557BB12"
-      alt="" className="w-[20w] h-[30vh] mx-4 rounded-xl shadow-inner contrast-125 shadow-yellow-500" />
-</div> 
-        </div>
+            </Button>
+                    <iframe
+                    src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdiubghp1i%2Fvideo%2Fupload%2Fv1700112917%2Flanding_x7yak3.mp4&cloud_name=diubghp1i&player[controls]=false&player[muted]=false&player[hideContextMenu]=false&player[floatingWhenNotVisible]=false&player[autoplay]=true&player[loop]=true&source[autoplayOnScroll]=false"
+                    //   style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                    frameborder="0"
+                    className='w-[100vw] h-[100vh]'
+                    ></iframe>
+            
+
+
 
         
-      </div>
 
-    <div className="flex gap-4 mt-10 px-6 justify-center">
-      {comentariosData.map((comentario, index) => (
-        <CardComentary key={index} {...comentario} />
-      ))}
-    </div>
-
-
-      <Button color="primary">Click me</Button>
-      <h1 className=" font-extralight ">HOLA MUNDO</h1>
-      <h1 className=" font-light ">HOLA MUNDO</h1>
-      <h1 className=" font-mono ">HOLA MUNDO</h1>
-      <h1 className=" font-agbalumo ">HOLA MUNDO</h1>
-      <h1 className=" font-extralight ">HOLA MUNDO</h1>
-      <h1 className=" font-light ">HOLA MUNDO</h1>
-      <h1 className=" font-mono ">HOLA MUNDO</h1>
-      <h1 className=" font-agbalumo ">HOLA MUNDO</h1>
-      <h1 className=" font-extralight ">HOLA MUNDO</h1>
-      <h1 className=" font-light ">HOLA MUNDO</h1>
-      <h1 className=" font-mono ">HOLA MUNDO</h1>
-      <h1 className=" font-agbalumo ">HOLA MUNDO</h1>
-      <h1 className=" font-extralight ">HOLA MUNDO</h1>
-      <h1 className=" font-light ">HOLA MUNDO</h1>
-      <h1 className=" font-mono ">HOLA MUNDO</h1>
-      <h1 className=" font-agbalumo ">HOLA MUNDO</h1>
-      
-          
-    </>
-  )
+         
+  </section>
+  
+    
+        
+  
+    )
 }
